@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Faculty Student Appointment System</title>
+      
+       <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1> Faculty Student Appointment Management System</h1>
+
+</header>
+
+
+<main>
+
+<!-- LOGIN -->
+
+<section id="loginPage" class="card">
+
+    <h2>Login</h2>
+
+    <input id="loginEmail" type="email" placeholder="Enter Email" >
+
+    <input id="loginPassword"  type="password" placeholder="Enter Password" >
+
+    <button onclick="login()"> Login</button>
+
+    <p>  New Student?
+        <button class="link" onclick="showRegister()" > Register</button>
+    </p>
+
+    <p class="demo"> Student:  student@example.com / 123456 <br><br>  Faculty:faculty@example.com / 123456 </p>
+
+    <div id="loginMsg"></div>
+
+</section>
+
+
+<!-- REGISTER -->
+
+<section  id="registerPage"  class="card hidden">
+
+    <h2>Student Registration</h2>
+
+    <input id="regName" placeholder="Full Name">
+
+    <input id="regEmail" type="email" placeholder="Email">
+
+    <input  id="regPassword" type="password" placeholder="Password">
+
+    <button onclick="register()"> Register</button>
+
+    <button class="secondary"  onclick="showLogin()" > Back to Login </button>
+
+    <div id="regMsg"></div>
+
+</section>
+
+
+<!-- DASHBOARD -->
+
+<section  id="dashboard"  class="hidden" >
+
+    <div class="top">
+
+        <h2 id="welcome"> </h2>
+
+        <button onclick="logout()">Logout </button>
+
+    </div>
+
+
+    <!-- STUDENT -->
+
+    <div id="studentPanel" class="card hidden" >
+
+        <h2> Book Appointment </h2>
+
+        <label> Select Faculty </label>
+
+        <select id="facultySelect"  onchange="loadSlots()" > </select>
+
+
+        <label> Available Slot </label>
+
+        <select id="slotSelect" > </select>
+
+
+        <input id="reason"  placeholder="Reason for meeting">
+
+
+        <button onclick="bookAppointment()">Book Appointment </button>
+
+
+        <h2> My Appointments </h2>
+
+        <div id="studentAppointments"> </div>
+
+    </div>
+
+
+    <!-- FACULTY -->
+
+    <div id="facultyPanel" class="card hidden" >
+
+        <h2>Add Availability</h2>
+
+        <input id="availDate"  type="date">
+
+        <input id="availTime" type="time">
+
+        <button onclick="addAvailability()"> Add Available Slot </button>
+
+
+        <h2> Appointment Requests </h2>
+
+        <div id="facultyAppointments" > </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>

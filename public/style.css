@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #f4f7fb;
+
+    color: #172533;
+}
+
+
+header {
+
+    background: #173b70;
+
+    color: white;
+
+    padding: 25px;
+
+    text-align: center;
+}
+
+
+main {
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    padding: 20px;
+}
+
+
+.card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px #0001;
+
+    margin-bottom: 20px;
+}
+
+
+input,
+select,
+button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 8px 0;
+
+    border-radius: 8px;
+
+    border: 1px solid #ccc;
+
+    font-size: 15px;
+}
+
+
+button {
+
+    background: #173b70;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+
+    opacity: 0.9;
+}
+
+
+.secondary {
+
+    background: #666;
+}
+
+
+.hidden {
+
+    display: none;
+}
+
+
+.link {
+
+    width: auto;
+
+    background: none;
+
+    color: #173b70;
+
+    padding: 0;
+}
+
+
+.top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.top button {
+
+    width: auto;
+
+    padding: 10px 20px;
+}
+
+
+.appointment {
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    margin: 10px 0;
+}
+
+
+.status {
+
+    font-weight: bold;
+}
+
+
+.demo {
+
+    font-size: 13px;
+
+    color: #666;
+}
+
+
+.ok {
+
+    color: green;
+}
+
+
+.error {
+
+    color: red;
+}
